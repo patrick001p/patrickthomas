@@ -1,0 +1,45 @@
+/*
+ *  Exercice 1 (a) du TP1
+ *
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  
+  int p = 0;
+  int q = 0;
+  int i = 1;
+  int j = 1;
+
+  scanf("%d %d", &p, &q);
+
+  if(q<=0 || p <=0){
+    printf("Not possible");
+
+
+  }else{
+    for(i=1; i<=q; i++){
+      for(j=1; j<=p; j++){
+        printf("(%d,%d) ", i, j);
+
+
+
+      }
+      printf("\n");
+
+
+
+    }
+
+
+
+
+  }
+
+
+
+
+  return 0;
+}
