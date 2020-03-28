@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(void)
+{
+  float arr1[5];
+  int i,n;
+
+  printf(" Nombre d'elements du tableau:\n");
+
+  scanf("%d",&n);
+
+  printf("Affiche les nombres:\n");
+  for(i=0;i<n;i++)
+  {
+	  
+	  scanf("%f",arr1+i);
+	}
+  printf(" The elements you entered are : \n");
+  for(i=0;i<n;i++)
+  {
+	  printf("%f \n",*(arr1+i));
+	}
+	return 0;
+}
