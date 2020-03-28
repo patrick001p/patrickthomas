@@ -14,7 +14,7 @@ int main(void)
 	  
 	  scanf("%f",arr1+i);
 	}
-  printf(" The elements you entered are : \n");
+  printf(" Nombres affiches  : \n");
   for(i=0;i<n;i++)
   {
 
