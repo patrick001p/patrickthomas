@@ -1,0 +1,26 @@
+/*
+ *  Exercice 1 (b) du TP1
+ *
+ */
+
+
+#include <stdio.h>
+
+#define N 10
+ 
+  int number, i,
+    
+  a[N] = {  1,  2, 3,  4,  45, 46,  47,  8,  9, 20 },
+  b[N] = { 1, 2, 3, 4, 5, 6, 7, 8,  9, 20 };
+
+int main(void) {
+  
+  number = 0;
+    for (i = 0; i < N; i++)
+        if (a[i] == b[i])
+            number++;
+ 
+    printf("%d\n", number);
+  
+  return 0;
+}
