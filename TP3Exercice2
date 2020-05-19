@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+void Affiche(float tab[], int n);
+float max(float tab[], int n);
+float min(float tab[], int n);
+
+int numero;
+float val;
+int i;
+float tab[];
+float maximum;
+float minimum;
+
+void Affiche(float tab[], int n){
+
+  for(i = 0; i < n; i++ ){
+    scanf("%f", &tab[i]);
+
+
+  }
+
+
+
+}
+
+
+
+
+
+int main(void) {
+ 
+
+  scanf("%d", &numero);
+
+  Affiche(tab, numero);
+
+  maximum = max(tab, numero);
+
+  minimum = min(tab, numero);
+
+  printf("L’élément le plus grand du tableau de nombres est %f\n", maximum);
+
+  printf("L’élément le plus petit du tableau de nombres est %f\n", minimum);
+
+  return 0;
+}
+
+
+float max(float tab[], int n){
+  int maxed;
+
+  maxed = tab[0];
+
+  for(i = 1; i < n; i++ ){
+    if (maxed < tab[i]){
+      maxed = tab[i];
+    }
+
+  }
+
+
+
+  return maxed;
+}
+
+float min(float tab[], int n){
+  int small;
+
+  small = tab[0];
+
+  for(i = 1; i < n; i++ ){
+    if (tab[i] < small){
+      small = tab[i];
+    }
+
+  }
+
+
+
+  return small;
+}
