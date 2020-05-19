@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+  int fat, n;
+  int p;
+  float res3;
+  float cnp;
+
+
+int fatorial(int n){
+
+  int fat;
+
+  for(fat = 1; n > 1; n = n - 1){
+  fat = fat * n;
+  }
+
+  return fat;
+}
+
+float C_n_p(int a, int b){
+
+  res3 = fatorial(a)/(fatorial(b)*fatorial(a - b));
+
+
+  return res3;
+}
+
+
+int main(void) {
+  float ret;
+
+
+  scanf("%d", &n);
+  scanf("%d",&p);
+  ret = C_n_p(n, p);
+  printf("%f", ret);
+
+  return 0;
+}
